@@ -11,7 +11,6 @@ function imageMode(color) {
     image1.src = `img/undraw_proud_coder_${color}.svg`;
     image2.src = `img/undraw_feeling_proud_${color}.svg`;
     image3.src = `img/undraw_conceptual_idea_${color}.svg`;
-    imageMode('dark');
 }
 
 
@@ -21,7 +20,7 @@ function darkMode() {
     textBox.style.backgroundColor = 'rgb(255 255 255 / 50%)';
     toggleIcon.children[0].textContent = 'Dark Mode';
     toggleIcon.children[1].classList.replace('fa-sun', 'fa-moon');
-    imageMode('light');
+    imageMode('dark');
 }
 
 
@@ -31,6 +30,7 @@ function lightMode() {
     textBox.style.backgroundColor = 'rgb(0 0 0/ 50%)';
     toggleIcon.children[0].textContent = 'Light Mode';
     toggleIcon.children[1].classList.replace('fa-moon', 'fa-sun');
+    imageMode('light');
 }
 
 // Swithc Theme Dynamically
